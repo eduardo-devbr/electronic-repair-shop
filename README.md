@@ -9,7 +9,7 @@
 [![CSS Modules](https://img.shields.io/badge/CSS_Modules-000?style=flat-square&logo=css3&logoColor=white)](https://github.com/css-modules/css-modules)
 [![License](https://img.shields.io/badge/Licença-MIT-green?style=flat-square)](LICENSE)
 
-> Projeto acadêmico desenvolvido para a disciplina **SPODWE2 – Desenvolvimento Web 2**.  
+> Projeto acadêmico desenvolvido para a disciplina **Desenvolvimento Web 2**.  
 > Uma SPA completa para gerenciar clientes, técnicos, serviços e ordens de serviço de uma assistência técnica.
 
 </div>
