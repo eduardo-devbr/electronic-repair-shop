@@ -118,5 +118,5 @@ O **TechFix** é um sistema fictício de gestão para uma assistência técnica,
 ---
 
 <div align="center">
-  Desenvolvido com ❤️ para fins acadêmicos
+  Desenvolvido com para fins acadêmicos
 </div>
