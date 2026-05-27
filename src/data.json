@@ -1,0 +1,27 @@
+{
+  "clientes": [
+    { "id": 1, "nome": "Carlos Mendes", "email": "carlos.mendes@email.com", "tel": "(11) 98765-4321", "end": "Rua das Flores, 123 – São Paulo, SP" },
+    { "id": 2, "nome": "Fernanda Lima", "email": "fernanda.lima@email.com", "tel": "(11) 91234-5678", "end": "Av. Paulista, 456 – São Paulo, SP" },
+    { "id": 3, "nome": "Ricardo Souza", "email": "ricardo.souza@email.com", "tel": "(11) 99876-5432", "end": "Rua Augusta, 789 – São Paulo, SP" },
+    { "id": 4, "nome": "Juliana Costa", "email": "juliana.costa@email.com", "tel": "(11) 94567-8901", "end": "Rua Oscar Freire, 321 – São Paulo, SP" }
+  ],
+  "tecnicos": [
+    { "id": 1, "nome": "Marcos Oliveira", "email": "marcos.oliveira@assistencia.com", "tel": "(11) 97654-3210", "esp": "Eletrônicos e Informática", "status": "Disponível" },
+    { "id": 2, "nome": "Patrícia Alves", "email": "patricia.alves@assistencia.com", "tel": "(11) 93210-9876", "esp": "Eletrodomésticos", "status": "Disponível" },
+    { "id": 3, "nome": "Eduardo Ferreira", "email": "eduardo.ferreira@assistencia.com", "tel": "(11) 98901-2345", "esp": "Ar-Condicionado e Refrigeração", "status": "Indisponível" }
+  ],
+  "servicos": [
+    { "id": 1, "nome": "Formatação de Computador", "cat": "Informática", "desc": "Formatação completa do sistema operacional com instalação de drivers e programas básicos.", "dur": "2 horas", "preco": 150 },
+    { "id": 2, "nome": "Troca de Tela de Notebook", "cat": "Informática", "desc": "Substituição de tela danificada por tela original ou compatível.", "dur": "3 horas", "preco": 350 },
+    { "id": 3, "nome": "Manutenção de Ar-Condicionado", "cat": "Refrigeração", "desc": "Limpeza, higienização e recarga de gás do aparelho.", "dur": "2 horas", "preco": 250 },
+    { "id": 4, "nome": "Reparo de Geladeira", "cat": "Eletrodomésticos", "desc": "Diagnóstico e reparo de problemas elétricos e mecânicos.", "dur": "4 horas", "preco": 200 },
+    { "id": 5, "nome": "Instalação de Software", "cat": "Informática", "desc": "Instalação e configuração de softwares solicitados pelo cliente.", "dur": "1 hora", "preco": 80 }
+  ],
+  "ordens": [
+    { "id": 1, "num": "#1", "cliId": 1, "tecId": 1, "svcId": 1, "status": "Concluída", "aber": "2026-04-10", "prev": "2026-04-10", "val": 150, "desc": "Computador muito lento, travando constantemente." },
+    { "id": 2, "num": "#2", "cliId": 2, "tecId": 2, "svcId": 4, "status": "Em Andamento", "aber": "2026-04-20", "prev": "2026-04-22", "val": 200, "desc": "Geladeira não está gelando adequadamente." },
+    { "id": 3, "num": "#3", "cliId": 3, "tecId": 3, "svcId": 3, "status": "Aguardando", "aber": "2026-05-01", "prev": "2026-05-05", "val": 250, "desc": "Ar-condicionado não resfria e faz barulho estranho." },
+    { "id": 4, "num": "#4", "cliId": 4, "tecId": 1, "svcId": 2, "status": "Concluída", "aber": "2026-05-10", "prev": "2026-05-12", "val": 350, "desc": "Tela rachada após queda do notebook." },
+    { "id": 5, "num": "#5", "cliId": 1, "tecId": 2, "svcId": 3, "status": "Em Andamento", "aber": "2026-05-15", "prev": "2026-05-18", "val": 220, "desc": "Máquina de lavar travando na centrifugação." }
+  ]
+}

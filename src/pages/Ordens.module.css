@@ -1,0 +1,90 @@
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  color: var(--text2);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all .12s;
+}
+.tab:hover { background: var(--bg4); color: var(--text); }
+.tabActive  { background: var(--blue2); border-color: var(--blue2); color: #f0f0f0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 14px;
+  cursor: pointer;
+  transition: border-color .12s, background .12s;
+}
+.card:hover { border-color: #3a4560; background: var(--bg3); }
+
+.cardTop  { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.cardNum  { font-size: 11px; color: var(--text3); }
+.cardSvc  { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+.cardDesc { font-size: 12px; color: var(--text2); margin-bottom: 8px; }
+.cardCli  { font-size: 11px; color: var(--text2); margin-bottom: 10px; display: flex; align-items: center; gap: 4px; }
+.cardFoot { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+
+.tecRow { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text2); }
+.valor  { font-size: 13px; font-weight: 500; color: var(--blue3); }
+
+.cardActs {
+  display: flex;
+  gap: 6px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.cardActs > * { flex: 1; justify-content: center; }
+
+.empty { grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text2); }
+
+/* DETAIL */
+.detBody  { display: flex; flex-direction: column; gap: 0; }
+.detBadge { margin-bottom: 14px; }
+.detRow   { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--border); align-items: center; flex-wrap: wrap; }
+.detRow:last-child { border-bottom: none; }
+.detLbl   { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; min-width: 110px; flex-shrink: 0; }
+.detValor { font-weight: 500; color: var(--blue3); }
+
+.detDescRow { padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+.detDesc    { font-size: 13px; color: var(--text2); line-height: 1.7; }
+
+.formRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ════════════════════════════════════
+   TABLET  (≤ 1024px)
+════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ════════════════════════════════════
+   MOBILE  (≤ 640px)
+════════════════════════════════════ */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}

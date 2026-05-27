@@ -1,0 +1,218 @@
+/* MODAL */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 16px 16px;
+}
+
+.modal {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  width: 500px;
+  max-width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modalSm { width: 360px; }
+
+.mHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--bg2);
+  z-index: 1;
+}
+
+.mTitle {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.xBtn {
+  background: transparent;
+  border: none;
+  color: var(--text2);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px;
+}
+.xBtn:hover { color: var(--text); }
+
+.mBody { padding: 20px; }
+
+.mFooter {
+  padding: 13px 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  position: sticky;
+  bottom: 0;
+  background: var(--bg2);
+}
+
+.confirmMsg { font-size: 13px; color: var(--text2); line-height: 1.6; }
+
+/* BUTTONS */
+.btn {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 7px 14px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.12s;
+}
+.btn:hover { background: var(--bg4); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnPrimary {
+  background: var(--blue2);
+  border-color: var(--blue2);
+  color: #f0f0f0;
+}
+.btnPrimary:hover { background: var(--blue); }
+
+.btnDanger {
+  background: transparent;
+  border-color: #7a1f1f;
+  color: #F09595;
+}
+.btnDanger:hover { background: #1a0a0a; }
+
+.btnEdit {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text2);
+}
+.btnEdit:hover { background: var(--bg4); color: var(--text); }
+
+/* BADGE */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.badge_blue   { background: #3a3a3a; color: #cccccc; }
+.badge_green  { background: #27500A; color: #C0DD97; }
+.badge_amber  { background: #633806; color: #FAC775; }
+.badge_red    { background: #791F1F; color: #F7C1C1; }
+.badge_gray   { background: #252d3d; color: #8b93a8; }
+
+/* FORM */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fieldFull { grid-column: 1 / -1; }
+
+.fieldLabel {
+  font-size: 11px;
+  color: var(--text2);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.input {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 8px 11px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: var(--font-body);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.12s;
+}
+.input:focus { border-color: var(--blue); }
+.input option { background: var(--bg3); }
+
+.textarea { resize: vertical; min-height: 70px; }
+
+/* INITIALS */
+.initials {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #3a3a3a;
+  color: #cccccc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.initialsGreen { background: #27500A; color: #C0DD97; }
+
+/* PAGE HEADER */
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pageTitle {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ════════════════════════════════════
+   MOBILE  (≤ 640px)
+════════════════════════════════════ */
+@media (max-width: 640px) {
+  .backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal,
+  .modalSm {
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--rl) var(--rl) 0 0;
+    max-height: 92vh;
+  }
+
+  .mBody {
+    padding: 16px;
+  }
+
+  .pageTitle {
+    font-size: 17px;
+  }
+}

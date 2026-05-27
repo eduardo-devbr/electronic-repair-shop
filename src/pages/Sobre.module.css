@@ -1,0 +1,77 @@
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 22px;
+  margin-bottom: 14px;
+}
+
+.cardTitle {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue3);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardText {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.8;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.teamCard {
+  background: var(--bg3);
+  border-radius: var(--r);
+  padding: 16px;
+  text-align: center;
+}
+
+.teamAv {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #3a3a3a;
+  color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-head);
+  margin: 0 auto 10px;
+}
+
+.teamName { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+.teamRole { font-size: 11px; color: var(--text2); }
+
+/* ════════════════════════════════════
+   TABLET  (≤ 1024px)
+════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ════════════════════════════════════
+   MOBILE  (≤ 640px)
+════════════════════════════════════ */
+@media (max-width: 640px) {
+  .card {
+    padding: 16px;
+  }
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
